@@ -1457,7 +1457,7 @@ class RustdeskImpl {
   }
 
   bool isDisableSettings({dynamic hint}) {
-    return false;
+    return true;
   }
 
   bool isDisableAb({dynamic hint}) {
@@ -1465,11 +1465,11 @@ class RustdeskImpl {
   }
 
   bool isDisableAccount({dynamic hint}) {
-    return false;
+    return true;
   }
 
   bool isDisableInstallation({dynamic hint}) {
-    return false;
+    return true;
   }
 
   Future<bool> isPresetPassword({dynamic hint}) {
