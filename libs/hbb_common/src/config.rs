@@ -1977,11 +1977,12 @@ pub fn is_incoming_only() -> bool {
 
 #[inline]
 pub fn is_outgoing_only() -> bool {
-    HARD_SETTINGS
-        .read()
-        .unwrap()
-        .get("conn-type")
-        .map_or(false, |x| x == ("outgoing"))
+    return true;
+    //HARD_SETTINGS
+    //    .read()
+    //    .unwrap()
+    //    .get("conn-type")
+    //    .map_or(false, |x| x == ("outgoing"))
 }
 
 #[inline]
@@ -2000,7 +2001,8 @@ pub fn is_disable_tcp_listen() -> bool {
 
 #[inline]
 pub fn is_disable_settings() -> bool {
-    is_some_hard_opton("disable-settings")
+    return true;
+    //is_some_hard_opton("disable-settings")
 }
 
 #[inline]
@@ -2010,12 +2012,14 @@ pub fn is_disable_ab() -> bool {
 
 #[inline]
 pub fn is_disable_account() -> bool {
-    is_some_hard_opton("disable-account")
+    return true;
+    //is_some_hard_opton("disable-account")
 }
 
 #[inline]
 pub fn is_disable_installation() -> bool {
-    is_some_hard_opton("disable-installation")
+    return true;
+    //is_some_hard_opton("disable-installation")
 }
 
 pub mod keys {
